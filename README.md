@@ -40,7 +40,7 @@ chown 666 /system/bin/{surfaceflinger,app_process,bootanimation}
 killall surfaceflinger zygote
 ```
 
-Tada, you micht be able to start X now. Hopefully.
+Tada, you might be able to start X now. Hopefully.
 Important: DO NOT REBOOT. Before you reboot or lose power or some such thing,
 
 ```
