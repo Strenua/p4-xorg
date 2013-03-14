@@ -24,7 +24,7 @@ And the touchscreen driver:
     tar -xvf xf86-input-mtev-meego.tar.gz && cd xf86-input-mtev-meego
     su -c 'makepkg --asroot -A && pacman -U xf86-input-mtev-meego*.tar.*'
 
-Install the [https://github.com/Strenua/p4-xorg/blob/master/xorg.conf](xorg configuration) to /etc/X11/xorg.conf.
+Install the [xorg configuration](https://github.com/Strenua/p4-xorg/blob/master/xorg.conf) to /etc/X11/xorg.conf.
 
 Back in Android, prevent the Android display server from respawning, and then kill it:
     mount -o rw,remount /system
