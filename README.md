@@ -32,6 +32,11 @@ su -c 'makepkg --asroot -A && pacman -U xf86-input-mtev-meego*.tar.*'
 
 Install the [xorg configuration](https://github.com/Strenua/p4-xorg/blob/master/xorg.conf) to /etc/X11/xorg.conf.
 
+Last step for Arch, softlink the framebuffer character devices to /dev/ (from /dev/graphics/):
+```
+sudo ln -s /dev/graphics/fb* /dev/
+```
+
 Back in Android, prevent the Android display server from respawning, and then kill it:
 
 ```
