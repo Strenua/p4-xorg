@@ -41,7 +41,7 @@ Back in Android, prevent the Android display server from respawning, and then ki
 
 ```
 mount -o rw,remount /system
-chown 666 /system/bin/{surfaceflinger,app_process,bootanimation}
+chmod 666 /system/bin/{surfaceflinger,app_process,bootanimation}
 killall surfaceflinger zygote
 ```
 
